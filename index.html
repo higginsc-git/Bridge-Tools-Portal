@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bridge Moving Load Analysis Tools - Higgins, Oregon State University</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    .tool-card { transition: all 0.15s ease; }
+    .tool-card:hover { transform: translateY(-2px); box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body class="bg-slate-50 min-h-screen">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
+
+    <!-- Header -->
+    <header class="mb-8 pb-6 border-b border-slate-200">
+      <h1 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-2">
+        Bridge Moving Load Analysis Tools
+      </h1>
+      <p class="text-lg text-slate-600">
+        Browser-based analysis tools for moving load envelopes, influence lines, and design envelopes
+        on simply-supported spans with optional cantilevers.
+      </p>
+      <p class="text-sm text-slate-500 mt-3">
+        Christopher C. Higgins, PhD, PE &middot; School of Civil and Construction Engineering &middot; Oregon State University
+      </p>
+    </header>
+
+    <!-- Intro -->
+    <section class="mb-8">
+      <p class="text-slate-700 leading-relaxed">
+        Each tool below is a single, self-contained HTML file. Click <strong>Launch tool</strong> to run
+        it directly in your browser, or <strong>View on GitHub</strong> to see the README, source code,
+        or report an issue. No installation, no account, no telemetry; all computation runs locally on
+        your machine. Any analysis run can be saved as PDF through your browser's print dialog.
+      </p>
+    </section>
+
+    <!-- Tools -->
+    <section class="mb-10">
+      <h2 class="text-xl font-semibold text-slate-900 mb-4">Tools</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+        <!-- HL-93 Bridge Moving Load Analysis -->
+        <div class="tool-card bg-white rounded-lg border border-slate-200 p-5">
+          <div class="flex items-start justify-between mb-2">
+            <h3 class="text-lg font-semibold text-slate-900">HL-93 Bridge Moving Load Analysis</h3>
+            <span class="text-xs bg-blue-50 text-blue-700 px-2 py-1 rounded shrink-0 ml-2">Highway</span>
+          </div>
+          <p class="text-sm text-slate-600 mb-4">
+            AASHTO LRFD HL-93 design vehicular live load. Design tandem, design truck (with the rear-axle
+            spacing swept from 14 to 30 ft), and design lane load. Moment and shear envelopes with peak
+            values and full per-section tables.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <a href="https://higginsc-git.github.io/bridge-moving-load-analysis/"
+               class="inline-block bg-blue-600 text-white text-sm font-semibold px-4 py-2 rounded hover:bg-blue-700">
+              Launch tool &rarr;
+            </a>
+            <a href="https://github.com/higginsc-git/bridge-moving-load-analysis"
+               class="inline-block bg-white border border-slate-300 text-slate-700 text-sm font-semibold px-4 py-2 rounded hover:bg-slate-100">
+              View on GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- Influence Line Analysis -->
+        <div class="tool-card bg-white rounded-lg border border-slate-200 p-5">
+          <div class="flex items-start justify-between mb-2">
+            <h3 class="text-lg font-semibold text-slate-900">Influence Line Analysis</h3>
+            <span class="text-xs bg-slate-100 text-slate-700 px-2 py-1 rounded shrink-0 ml-2">General</span>
+          </div>
+          <p class="text-sm text-slate-600 mb-4">
+            Influence line construction and evaluation at any user-selected section, for moment and for
+            shear (left or right of the cut). Trapezoidal-rule integration with explicit zero-crossing
+            detection for sign-changing IL regions.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <a href="https://higginsc-git.github.io/Influence-Line-Analysis/"
+               class="inline-block bg-blue-600 text-white text-sm font-semibold px-4 py-2 rounded hover:bg-blue-700">
+              Launch tool &rarr;
+            </a>
+            <a href="https://github.com/higginsc-git/Influence-Line-Analysis"
+               class="inline-block bg-white border border-slate-300 text-slate-700 text-sm font-semibold px-4 py-2 rounded hover:bg-slate-100">
+              View on GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- Design Envelopes for Uniform Loads -->
+        <div class="tool-card bg-white rounded-lg border border-slate-200 p-5">
+          <div class="flex items-start justify-between mb-2">
+            <h3 class="text-lg font-semibold text-slate-900">Design Envelopes for Uniform Loads</h3>
+            <span class="text-xs bg-slate-100 text-slate-700 px-2 py-1 rounded shrink-0 ml-2">General</span>
+          </div>
+          <p class="text-sm text-slate-600 mb-4">
+            Design envelope analysis for uniform live load patterns, including pattern loading
+            considerations across the structure with the worst-case effects reported at every section.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <a href="https://higginsc-git.github.io/Design-Envelopes-for-Uniform-Loads/"
+               class="inline-block bg-blue-600 text-white text-sm font-semibold px-4 py-2 rounded hover:bg-blue-700">
+              Launch tool &rarr;
+            </a>
+            <a href="https://github.com/higginsc-git/Design-Envelopes-for-Uniform-Loads"
+               class="inline-block bg-white border border-slate-300 text-slate-700 text-sm font-semibold px-4 py-2 rounded hover:bg-slate-100">
+              View on GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- Train Moving Load Analysis -->
+        <div class="tool-card bg-white rounded-lg border border-slate-200 p-5">
+          <div class="flex items-start justify-between mb-2">
+            <h3 class="text-lg font-semibold text-slate-900">Train Moving Load Analysis</h3>
+            <span class="text-xs bg-emerald-50 text-emerald-700 px-2 py-1 rounded shrink-0 ml-2">Railway</span>
+          </div>
+          <p class="text-sm text-slate-600 mb-4">
+            AREMA Ch.15 Cooper E-XX (1 to 3 locomotives, with the trailing 8 k/ft uniform load) and
+            AREMA Alternate Live Load. Includes dead load tab and AREMA-default dynamic impact factor
+            with user override.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <a href="https://higginsc-git.github.io/Train-Moving-Load-Analysis/"
+               class="inline-block bg-blue-600 text-white text-sm font-semibold px-4 py-2 rounded hover:bg-blue-700">
+              Launch tool &rarr;
+            </a>
+            <a href="https://github.com/higginsc-git/Train-Moving-Load-Analysis"
+               class="inline-block bg-white border border-slate-300 text-slate-700 text-sm font-semibold px-4 py-2 rounded hover:bg-slate-100">
+              View on GitHub
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="mb-10 bg-white rounded-lg border border-slate-200 p-5">
+      <h2 class="text-xl font-semibold text-slate-900 mb-3">About</h2>
+      <p class="text-slate-700 leading-relaxed">
+        These tools are based on an original 2004 Fortran moving load analysis program developed by the
+        author for teaching and research in bridge engineering. The browser versions reimplement and
+        extend that engine in JavaScript with interactive plots, influence-line analysis, and AREMA
+        railway loadings. Each tool lives in its own GitHub repository, linked from the
+        <em>View on GitHub</em> button on each card above, where you can read the README, browse source
+        code, or report issues.
+      </p>
+    </section>
+
+    <!-- Disclaimer -->
+    <section class="mb-8 bg-amber-50 border border-amber-200 rounded-lg p-5">
+      <h2 class="text-base font-semibold text-amber-900 mb-2">Disclaimer</h2>
+      <p class="text-sm text-amber-900 leading-relaxed">
+        These tools are provided for engineering exploration and educational purposes only.
+        <strong>Use at your own risk.</strong> No warranty, express or implied, is made regarding the
+        correctness, accuracy, completeness, or fitness for any particular use of the analysis results,
+        source code, or documentation. Results produced by these tools must be independently verified
+        by a licensed professional engineer before being used for design, evaluation, rating,
+        construction, or any decision affecting public safety or property. The author and Oregon State
+        University assume no responsibility or liability for any errors, omissions, or consequences
+        arising from the use of this software.
+      </p>
+    </section>
+
+    <footer class="text-xs text-slate-500 text-center pt-4 border-t border-slate-200">
+      &copy; Christopher C. Higgins, Oregon State University.
+    </footer>
+  </div>
+</body>
+</html>
